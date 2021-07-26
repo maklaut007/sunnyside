@@ -1,0 +1,61 @@
+$bgcolor: white;
+$secondTextColor: #82828E;
+
+@mixin header-element {
+  position: absolute;
+    padding: 24px 18px;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  list-style-type: none;
+}
+.body{
+  &__wrap{
+    max-width: 720px;
+  }
+  &__image{
+    width: 100%;
+  }
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  color: $bgcolor;
+  position: relative;
+}
+
+.header__nav{
+  @include header-element;
+  right: 0px;
+  top:0px;
+  cursor: pointer;
+}
+.header__logo{
+  @include header-element;
+  left: 0px;
+  top: 0px;
+  font: 600 1.4rem Georgia, serif;
+}
+.header__title{
+  @include header-element;
+  left: 50%;
+  top: 34%;
+  transform: translate(-50%, -50%);
+  font: small-caps 600 3rem Georgia, serif;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+// &__list{
+//   position: absolute;
+//   right: 0px;
+//   top: 100%;
+//   display: flex;
+//   flex-flow:column nowrap;
+//   color: $secondTextColor;
+//   background-color: $bgcolor;
+// }
