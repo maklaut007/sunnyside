@@ -13,6 +13,7 @@
 }
 
 .body__image {
+  display: block;
   width: 100%;
 }
 
@@ -53,5 +54,126 @@
   font: small-caps 600 3rem Georgia, serif;
   letter-spacing: 0.3rem;
   text-align: center;
+}
+
+.company-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 24px;
+  text-align: center;
+}
+
+.company-info__title {
+  font-size: 2rem;
+  font: bold 2.2rem Georgia, serif;
+  margin: 14px 0;
+}
+
+.company-info__text {
+  font-size: 2rem;
+  font: 400 1.1rem sans-serif;
+  margin: 14px 0px;
+  line-height: 2rem;
+  color: #838288;
+}
+
+.company-info__link {
+  font-size: 2rem;
+  font: small-caps 700 1.2rem Georgia, serif;
+  margin: 14px 0;
+  color: black;
+}
+
+.company-service {
+  position: relative;
+}
+
+.company-service__description {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  text-align: center;
+  width: 100%;
+  padding: 16px;
+}
+
+.company-service__title {
+  font: 700 1.8rem Georgia, serif;
+  margin: 20px 0;
+  opacity: 70%;
+}
+
+.company-service__text {
+  font: 500 1rem sans-serif;
+  margin: 40px 0;
+  opacity: 70%;
+}
+
+.testimonals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 20px;
+}
+
+.testimonals__title {
+  margin-top: 20px;
+  font: small-caps 700 1.2rem Georgia, serif;
+  color: #9D9EA0;
+  letter-spacing: 0.3rem;
+}
+
+.client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client__image {
+  width: 70px;
+  margin: 60px 0 20px;
+  border-radius: 35px;
+}
+
+.client__testimony {
+  margin: 20px 8px;
+  font: 600 1rem sans-serif;
+  text-align: center;
+  line-height: 1.8rem;
+  color: #686868;
+}
+
+.client__name {
+  font: 700 1.2rem serif;
+  margin: 10px 0;
+}
+
+.client__ocupation {
+  color: #A2A2A2;
+  font: 600 0.8rem sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */
