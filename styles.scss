@@ -137,6 +137,42 @@ $secondTextColor: #82828E;
     font: 600 0.8rem sans-serif;
   }
 }
+.image-gallery{
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 80px;
+  &__item{
+    width: 50%;
+  }
+}
+.footer{
+  background-color: #90D4C5;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  &__title{
+    font: bold 2rem sans-serif;
+    opacity: 50%;
+    margin: 46px 0 40px;
+  }
+  &__nav{
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    opacity: 50%;
+    font: bold 1rem sans-serif;
+  }
+}
+.socials{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 40%;
+  margin:  60px;
+}
+
 // &__list{
 //   position: absolute;
 //   right: 0px;
