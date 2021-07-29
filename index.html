@@ -6,7 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&family=Fraunces:wght@400;800&display=swap" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -17,42 +19,50 @@
 <body>
   <div class="body__wrap">
     <header class="header">
-      <img alt="header" class="body__image" src="./images/mobile/image-header.jpg">
-        <div class="header__logo ">synnyside</div>
-        <nav class="header__nav"> 
-          <div class="nav__button">-</div>
+      <div class="header__item">
+        <a href="" class="header__logo"><img class="" src="./images/logo.svg" alt="logo"></a>
+        <img class="header__menu-button" src="./images/icon-hamburger.svg" alt="menu">
+        <nav class="header__nav-desktop"> 
           <ul class="nav__list">
-            <li class="nav__link">About</li>
-            <li class="nav__link">Services</li>
-            <li class="nav__link">Projects</li>
-            <li class="nav__link nav__link_active">Contact</li>
+            <li class="nav__link"><a href="#">About</a></li>
+            <li class="nav__link"><a href="#">Services</a></li>
+            <li class="nav__link"><a href="#">Projects</a></li>
+            <li class="nav__link nav__link_active"><a href="#">contact</a></li>
           </ul> 
         </nav>
-      <div class="header__title">we are <br> creatives</div>
+      </div>
+        <nav class="header__nav-mobile"> 
+          <ul class="nav__list">
+            <li class="nav__link"><a href="#">About</a></li>
+            <li class="nav__link"><a href="#">Services</a></li>
+            <li class="nav__link"><a href="#">Projects</a></li>
+            <li class="nav__link nav__link_active"><a href="#">contact</a></li>
+          </ul> 
+        </nav>
+      <div class="header__title">we are creatives</div>
+      <img class="header__arrow" alt="header-arrow"  src="./images/icon-arrow-down.svg">
     </header>
-    <main>
-      <img alt="transform" class="body__image" src="./images/mobile/image-transform.jpg">
-      <div class="company-info">
+    <main class="main">
+      <img alt="transform" class="main__item body__image" src="./images/mobile/image-transform.jpg">
+      <div class="main__item company-info">
         <h2 class="company-info__title">Transform your brand</h2>
         <p class="company-info__text">We are a full-service creative agency specializing in helping brands grow fast. 
           Engage your clients through compelling visuals that do most of the marketing for you.</p>
         <a href="#" class="company-info__link">learn more</a>
       </div>
-      <img alt="stand-out" class="body__image" src="./images/mobile/image-stand-out.jpg">
-      <div class="company-info">
+      <img alt="stand-out" class="main__item body__image" src="./images/mobile/image-stand-out.jpg">
+      <div class="main__item company-info">
         <h2 class="company-info__title">Stand out to the right audience</h2>
         <p class="company-info__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
         <a href="#" class="company-info__link">learn more</a>
       </div>
-        <div class="company-service">
-          <img alt="graphic-design" class="body__image" src="./images/mobile/image-graphic-design.jpg">
+        <div class="main__item company-service graphic-design">
           <div class="company-service__description">
             <h2 class="company-service__title">Graphic Design</h2>
             <p class="company-service__text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
           </div>
         </div>
-        <div class="company-service">
-          <img alt="stand-out" class="body__image" src="./images/mobile/image-photography.jpg">
+        <div class="main__item company-service photography">
           <div class="company-service__description">
             <h2 class="company-service__title">Photography</h2>
             <p class="company-service__text">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
@@ -80,10 +90,10 @@
           </div>
         </div>
         <div class="image-gallery">
-          <img alt="transform" class="image-gallery__item" src="./images/mobile/image-gallery-milkbottles.jpg">
-          <img alt="transform" class="image-gallery__item" src="./images/mobile/image-gallery-orange.jpg">
-          <img alt="transform" class="image-gallery__item" src="./images/mobile/image-gallery-cone.jpg">
-          <img alt="transform" class="image-gallery__item" src="./images/mobile/image-gallery-sugar-cubes.jpg">
+          <div class="image-gallery__item image-gallery_milkbottles"></div>
+          <div class="image-gallery__item image-gallery_orange"></div>
+          <div class="image-gallery__item image-gallery_cone"></div>
+          <div class="image-gallery__item image-gallery_sugar-cubes"></div>
         </div>
   
   
@@ -98,19 +108,16 @@
       <div class="footer__link">Projects</div>
     </ul>
     <div class="socials">
-      <img src="./images/icon-facebook.svg" alt="fb">
-      <img src="./images/icon-instagram.svg" alt="fb">
-      <img src="./images/icon-twitter.svg" alt="fb">
-      <img src="./images/icon-pinterest.svg" alt="fb">
-    </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Maksym</a>.
+      <img class="socials__link" src="./images/icon-facebook.svg" alt="facebook">
+      <img class="socials__link" src="./images/icon-instagram.svg" alt="instagram">
+      <img class="socials__link" src="./images/icon-twitter.svg" alt="twitter">
+      <img class="socials__link" src="./images/icon-pinterest.svg" alt="pinterest">
     </div>
  </footer>
   
 
   
 </div>
+<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
